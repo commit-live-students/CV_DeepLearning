@@ -1,0 +1,110 @@
+Q1. "Convolutional Neural Networks can perform various types of transformation (rotations or scaling) in an input”. Is the statement correct True or False?
+
+A. True
+
+B. False
+
+Solution: (B)
+
+Data Preprocessing steps (viz rotation, scaling) is necessary before you give the data to neural network because neural network cannot do it itself.
+
+Q2. Which of the following gives non-linearity to a neural network?
+
+A. Stochastic Gradient Descent
+
+B. Rectified Linear Unit
+
+C. Convolution function
+
+D. None of the above
+
+Solution: (B)
+
+Rectified Linear unit is a non-linear activation function.
+
+Q3. The number of neurons in the output layer should match the number of classes (Where the number of classes is greater than 2) in a supervised learning task. True or False?
+
+A. True
+
+B. False
+
+Solution: (B)
+
+It depends on output encoding. If it is one-hot encoding, then its true. But you can have two outputs for four classes, and take the binary values as four classes(00,01,10,11).
+
+Q4. In a neural network, which of the following techniques is used to deal with overfitting?
+
+A. Dropout
+
+B. Regularization
+
+C. Batch Normalization
+
+D. All of these
+
+Solution: (D)
+
+All of the techniques can be used to deal with overfitting.
+
+Q5. When pooling layer is added in a convolutional neural network, translation in-variance is preserved. True or False?
+
+A. True
+
+B. False
+
+Solution: (A)
+
+Translation invariance is induced when you use pooling.
+
+Q6. For an image recognition problem (recognizing a cat in a photo), which architecture of neural network would be better suited to solve the problem?
+
+A. Multi Layer Perceptron
+
+B. Convolutional Neural Network
+
+C. Recurrent Neural network
+
+D. Perceptron
+
+Solution: (B)
+
+Convolutional Neural Network would be better suited for image related problems because of its inherent nature for taking into account changes in nearby locations of an image
+
+Q7. Which of following activation function can’t be used at output layer to classify an image ?
+
+A) sigmoid
+B) Tanh
+C) ReLU
+D) If(x>5,1,0)
+E) None of the above
+
+Solution: C
+
+ReLU gives continuous output in range 0 to infinity. But in output layer, we want a finite range of values. So option C is correct.
+
+Q8. LSTM can help prevent vanishing gradient problem in RNN.
+
+A) True
+B) False
+
+Solution: A
+
+Option A is correct. This is because it has implicit memory to remember past behavior.
+
+Q9. [True or False] Sentiment analysis using Deep Learning is a many-to one prediction task
+
+A) TRUE
+B) FALSE
+
+Solution: A
+
+Option A is correct. This is because from a sequence of words, you have to predict whether the sentiment was positive or negative.
+
+Q10. Which loss function will you prefer for multi-modal prediction?
+
+A) Mean square error.
+B) Categorical cross-entropy.
+C) Hinge loss.
+D) None of the above.
+
+Answer: (B) Multimodal learning may requires multi-class prediction at the output so categorical cross-entropy is the best choice for such cases.

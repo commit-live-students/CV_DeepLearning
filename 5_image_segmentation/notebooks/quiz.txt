@@ -1,0 +1,81 @@
+Q1) Which of the following statements are true about stuff and thing objects ?
+A) Stuff objects have charateristic shapes and size.
+B) Thing objects have charateristic shapes and size.
+C) Stuff objects are typically highly textured. 
+D) Thing objects have identifiable parts, where as stuff objects do not.
+
+Ans) A, C, D
+
+Q2) How many stuff objects are present in the COCOstuff datasets?
+A) 91
+B) 87
+C) 92
+D) 100
+
+Ans) A . len(data.cats) gives 92 but we have one class as others. Ignoring that leads to 91
+
+Q3) Which of the following is True? 
+A) Combining semantic segmenation and Instance segmentation model leads to panpotic segmentation
+B) Panaoptic segmentation gives more information about an image compared to semantic segmentation and panoptic segmentation.
+C) Using semantic segmentation, we can count the number of objects of a class. 
+D) Instance segmentation is used to detect stuff ojects rather than thing objects 
+
+Ans) A, B
+
+Q4) Which of the following datasets contains semantic segmentation annotations?
+A) COCOStuff
+B) CityScapes 
+C) ADE20K
+D) All of the above.
+
+Ans) D 
+
+Q5) Which the following are true about performing agumentation? 
+A) agumentation increases the generalization capability of the network.
+B) we need to save all the agumented data locally before training the network 
+C) Agumentation increases the training time.
+D) ImageDataGenertor cannot be used for semantic segmentation.
+
+Ans- (A, D)
+
+Q6) which of the following are true about linknet? 
+A) Uses elementwise addition between skip-connection and decoder output
+B) Uses stacking between skip-connection and decoder output.
+C) Can Use only upsamling layer in decoding layer.
+D) Can use both upsampling or transpose layers in decoding layer.
+
+Ans- (A, D)
+
+
+Q7) which of the following is true about FPN network ? 
+A) FPN modules are used in object detection and instance segmentation too.
+B) Feature pyramid networks are faster and more accurate in detecting small objects than using Image pyramid. 
+C) FPN can use any of the 25 backends mentioned in the segmentation-models repo
+D) FPN is good at capturing localization features and semantic features. 
+
+Ans) (A, B, C, D)
+
+Q8) which of the following network has most number of trainable params? 
+A) unet with resnet18 and decoder_block_type transpose
+B) unet with resnet18 and decoder_block_type upsampling
+C) linknet with resnet18 and decoder_block_type transpose
+D) linknet with resnet18 and decoder_block_type upsampling
+
+Ans) A.
+
+
+Q9) Which of the follwoing is true for loss functions? 
+A) It is better to use combined cross-entropy loss and jaccard loss to train segmentation models than using single loss function.
+B) It is better to use cross entropy loss than jaccard loss or combined cross-entropy loss and jaccard loss for training segmentation models.
+C) In multi-classification problem, jaccard loss is calculated first individually for each class and then averaged over all the classes. 
+D) Jaccard loss is 1-iou_score.
+
+Ans) B, C, D
+
+Q10) which of the following is true ?
+A) When heavy class imbalance is present in the dataset, it is better to use pixel accuracy.
+B) In cancer cell identification, precision is more important than recall.
+C) In cancer cell identification, recall is more important than precision.
+D) It is not good to use pixel accuracy when there is heavy class imbalance.
+
+Ans) C, D

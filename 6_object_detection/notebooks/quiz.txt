@@ -1,0 +1,83 @@
+Q1) Which of the following are the problems with sliding window approach?
+A) Objects comes in different shapes and sizes
+B) Objects appear at different locations of the image
+C) neither A or B
+D) Both A and B
+
+Ans) D
+
+Q2) Which of the following are usecases for object detection 
+A) Object detection is used to localize and identify the damages to vechiles, buildings etc
+B) In Retail stores, Object detection is used to track the shoppers behaviour across the store.
+C) In manufacturing, Object detection is used to identify the defective locations of a product.
+D) All of the above 
+
+Ans) D 
+
+Q3) How is object detection different from object classification?
+A) Object detection identifies location of required object along with its class whereas classification only tells whether an object is present or not. 
+B) Object detection does pixel to pixel classification where as classification does image level classification 
+C) Both A and B are correct 
+D) Both A and B are incorrect
+
+Ans) A 
+
+Q4) Which of the following datasets has largest number of categories annotated ?
+A) COCO
+B) Pascal VOC
+C) OpenImagesV4
+D) All the datasets have same number of categories annotated 
+
+Ans) C
+
+Q5) Which of the following datasets have largest number of images annotated ?
+A) COCO
+B) Pascal VOC
+C) OpenImagesV4
+D) All the datasets have same number of images annotated 
+
+Ans) C
+
+Q6) Which of the following image sizes doesn't occur in pyramid generated on an image of size (800, 800) using downscale of 1.5, where the smallest image cannot be less than (64, 64)?
+
+
+A) (356, 356, 3)
+B) (238, 238, 3) 
+C) (64, 64, 3) 
+D) (106, 106, 3)
+
+Ans) C 
+
+Q7) which of the following statements are true ?
+A) Two-stage object detectors have better localizations compared one-stage
+B) two stage object detectors have high precision compared one-stage
+C) single stage object detector sees the entire image during training and testing so it implicity ecodes contextual information about classes as well as their appearance.
+D) All the above statements are true 
+
+A) D 
+
+Q8) Which of the following is a two stage detector?
+A) RetinaNet, 
+B) Yolo,
+C) Faster RCNN 
+D) SSD
+
+Ans) C 
+
+Q9) Which of the following statements are True about Retinanet?
+
+A) RetinaNet uses bottom-up pathway lateral connections
+B) RetinaNet uses top-down pathway lateral connections
+C) Neither uses top-down or bottom-up
+D) Doesn't use lateral connections
+
+Ans) B
+
+Q10) What happens when FPN is removed from retinanet?
+
+A) Overall Accuracy (mAP) will drop. 
+B) Inference time will increase 
+C) mAP of small objects drop by large margin 
+D) Inference time will increase 
+
+Ans) A, B, C
